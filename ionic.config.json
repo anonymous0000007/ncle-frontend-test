@@ -1,0 +1,7 @@
+{
+  "name": "ncle-frontend-test",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
