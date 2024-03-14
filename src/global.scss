@@ -97,8 +97,12 @@
   }
 }
 
-.btn-secondary {
+.no-ripple {
   --ripple-color: transparent;
+}
+
+.btn-secondary {
+  @extend .no-ripple;
   --color: rgba(137, 106, 249, 1);
   --background: #fff;
   --border-radius: 24px;
@@ -113,4 +117,8 @@
   font-weight: 900;
   text-transform: capitalize;
   --width: 100%;
+}
+
+.pointer {
+  cursor: pointer;
 }

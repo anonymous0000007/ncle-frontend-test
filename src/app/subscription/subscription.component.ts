@@ -1,14 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-subscription',
   templateUrl: './subscription.component.html',
   styleUrls: ['./subscription.component.scss'],
 })
-export class SubscriptionComponent  implements OnInit {
+export class SubscriptionComponent {
 
   constructor() { }
-
-  ngOnInit() {}
-
 }

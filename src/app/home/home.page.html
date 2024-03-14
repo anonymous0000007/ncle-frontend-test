@@ -1,5 +1,5 @@
 <ion-content color="primary" [fullscreen]="false">
-  <ion-grid>
+  <ion-grid class="subscribe-container">
     <ion-row class="ion-justify-content-center">
       <ion-col sizeXl="8" sizeLg="9" sizeMd="9" sizeSm="10" sizeXs="11" size="12" class="ion-text-center">
         <ion-text class="header-secondary-1">
@@ -7,19 +7,19 @@
         </ion-text>
       </ion-col>
     </ion-row>
-    <ion-row class="ion-justify-content-center">
+    <ion-row class="ion-padding-vertical ion-justify-content-center">
       <ion-col sizeXl="7" sizeLg="8" sizeMd="9" sizeSm="10" sizeXs="11" size="12" class="ion-text-center ion-text-wrap">
         <ion-text class="header-secondary-2">
           Unleash your child's curiosity with our educational subscription box filled with fun and learning.
         </ion-text>
       </ion-col>
     </ion-row>
-    <ion-row class="ion-justify-content-center">
+    <ion-row class="ion-padding-bottom ion-justify-content-center">
       <ion-col size="12" class="ion-text-center">
         <ion-button [routerLink]="['/subscription']" class="btn-secondary">Subscribe Now</ion-button>
       </ion-col>
     </ion-row>
-    <ion-row class="ion-justify-content-center">
+    <ion-row class="ion-padding-vertical ion-justify-content-center">
       <ion-col size="11" class="ion-text-center">
         <ion-img src="assets/placeholder.webp" alt="Surprise boxes"></ion-img>
       </ion-col>
@@ -27,21 +27,21 @@
   </ion-grid>
 
   <ion-grid class="surprise-container">
-    <ion-row class="ion-justify-content-center">
+    <ion-row class="ion-justify-content-center margin-top">
       <ion-col sizeXl="7" sizeLg="8" sizeMd="9" sizeSm="10" sizeXs="11" size="12" class="ion-text-center">
         <ion-text class="ion-text-wrap header-dark header-dark-bold-1">
           Discover
         </ion-text>
       </ion-col>
     </ion-row>
-    <ion-row class="ion-justify-content-center">
+    <ion-row class="ion-padding-vertical ion-justify-content-center">
       <ion-col sizeXl="7" sizeLg="8" sizeMd="9" sizeSm="10" sizeXs="11" size="12" class="ion-text-center ion-text-wrap">
         <ion-text class="header-dark-1 header-dark header-dark-bolder-1">
           How It Works: Subscribe and Receive Your Surprise Box
         </ion-text>
       </ion-col>
     </ion-row>
-    <ion-row class="ion-justify-content-center">
+    <ion-row class="ion-padding-bottom ion-justify-content-center">
       <ion-col sizeXl="7" sizeLg="8" sizeMd="9" sizeSm="10" sizeXs="11" size="12" class="ion-text-center ion-text-wrap">
         <ion-text class="header-dark-2 header-dark header-dark-light-1">
           Subscribe to our surprise subscription box and give your child the gift of learning. Each month, we curate a
@@ -49,59 +49,140 @@
         </ion-text>
       </ion-col>
     </ion-row>
-    <ion-row>
-      <ion-col class="ion-text-center">
+    <ion-row class="ion-padding-vertical ion-justify-content-center">
+      <ion-col sizeXl="4" sizeLg="4" sizeMd="6" sizeSm="12" sizeXs="12" size="12">
         <ion-grid>
-          <ion-img src="assets/subscribe.svg" alt="Subscribe first"></ion-img>
-        </ion-grid>
-        <ion-grid class="ion-text-wrap">
-          <ion-text class="header-dark header-dark-bolder-3">Step 1:</ion-text>
-          <ion-text class="header-dark header-dark-bolder-2">Subscribe</ion-text>
-        </ion-grid>
-        <ion-grid>
-          <ion-text class="header-dark header-dark-light-2">Select a subscription plan that suits your child's learning needs and preferences.</ion-text>
+          <ion-row class="ion-padding-vertical ion-justify-content-center">
+            <ion-img class="step-icon" src="assets/subscribe.svg" alt="Subscribe first"></ion-img>
+          </ion-row>
+          <ion-row class="ion-padding-vertical ion-justify-content-center ion-text-wrap">
+            <ion-label class="header-dark header-dark-bolder-3 ion-text-center ion-text-wrap">
+              Step 1: <br *ngIf="platform.width() >= 768">Subscribe
+            </ion-label>
+          </ion-row>
+          <ion-row class="ion-padding-bottom ion-text-center">
+            <ion-text class="header-dark header-dark-light-2">Select a subscription plan that suits your child's
+              learning
+              needs and preferences.</ion-text>
+          </ion-row>
         </ion-grid>
       </ion-col>
-      <ion-col>
-        <ion-img src="assets/customize.svg" alt="Subscribe first"></ion-img>
-        <ion-text class="header-dark header-dark-bolder-3">Step 2:</ion-text>
-        <ion-text class="header-dark header-dark-bolder-2">Personalise Your Box</ion-text>
-        <ion-text class="header-dark header-dark-light-2">Tell us about your child's age, interests, and learning goals, and we'll customize their surprise box accordingly.</ion-text>
+      <ion-col sizeXl="4" sizeLg="4" sizeMd="6" sizeSm="12" sizeXs="12" size="12">
+        <ion-grid>
+          <ion-row class="ion-padding-vertical ion-justify-content-center">
+            <ion-img class="step-icon" src="assets/customize.svg" alt="Personalise your box"></ion-img>
+          </ion-row>
+          <ion-row class="ion-padding-vertical ion-justify-content-center ion-text-wrap">
+            <ion-label class="header-dark header-dark-bolder-3 ion-text-center ion-text-wrap">
+              Step 2: <br *ngIf="platform.width() >= 768px">Personalise Your Box
+            </ion-label>
+          </ion-row>
+          <ion-row class="ion-padding-bottom ion-text-center">
+            <ion-text class="header-dark header-dark-light-2">Tell us about your child's age, interests, and learning
+              goals,
+              and we'll customize their surprise box accordingly.</ion-text>
+          </ion-row>
+        </ion-grid>
       </ion-col>
-      <ion-col>
-        <ion-img src="assets/surprise.svg" alt="Subscribe first"></ion-img>
-        <ion-text class="header-dark header-dark-bolder-3">Step 3:</ion-text>
-        <ion-text class="header-dark header-dark-bolder-2">Receive Your Surprise Box</ion-text>
-        <ion-text class="header-dark header-dark-light-2">Sit back and relax as your child eagerly awaits the arrival of their monthly surprise box filled with engaging learning materials.</ion-text>
+      <ion-col sizeXl="4" sizeLg="4" sizeMd="6" sizeSm="12" sizeXs="12" size="12">
+        <ion-grid>
+          <ion-row class="ion-padding-vertical ion-justify-content-center">
+            <ion-img class="step-icon" src="assets/surprise.svg" alt="Receive your surprise box"></ion-img>
+          </ion-row>
+          <ion-row class="ion-padding-vertical ion-justify-content-center ion-text-wrap">
+            <ion-label class="header-dark header-dark-bolder-3 ion-text-center ion-text-wrap">
+              Step 3: <br *ngIf="platform.width() >= 768">Receive Your Surprise Box
+            </ion-label>
+          </ion-row>
+          <ion-row class="ion-padding-bottom ion-text-center">
+            <ion-text class="header-dark header-dark-light-2">Sit back and relax as your child eagerly awaits the
+              arrival of their monthly surprise box filled with engaging learning materials.</ion-text>
+          </ion-row>
+        </ion-grid>
       </ion-col>
     </ion-row>
-    <ion-row class="ion-justify-content-center">
+    <ion-row class="ion-padding-vertical ion-justify-content-center">
       <ion-col size="12" class="ion-text-center">
         <ion-button [routerLink]="['/subscription']" class="btn-secondary">Subscribe Now</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
 
-  Link One
-  Link Two
-  Link Three
-  Link Four
-  Link Five
-  Subscribe
-  <ion-item fill="outline">
-    <ion-input placeholder="Enter your email"></ion-input>
-  </ion-item>
-  <ion-button fill="outline" color="secondary">Subscribe</ion-button>
-  By subscribing you agree to with our Privacy Policy
-  <ion-grid color="secondary">
-    <ion-row color="secondary" class="ion-justify-content-center">
-      <ion-col size="12">
-        <hr color="secondary"/>
+  <ion-grid class="footer-container">
+    <ion-row>
+      <ion-col sizeSm="12" sizeXs="12" class="ion-hide-md-up">
+        <ion-text class="logo">
+          Logo
+        </ion-text>
+      </ion-col>
+      <ion-col sizeSm="12" sizeXs="12" class="ion-hide-md-up">
+        <ion-text class="extra-link">
+          Link One
+        </ion-text>
+      </ion-col>
+      <ion-col sizeSm="12" sizeXs="12" class="ion-hide-md-up">
+        <ion-text class="extra-link">
+          Link Two
+        </ion-text>
+      </ion-col>
+      <ion-col sizeSm="12" sizeXs="12" class="ion-hide-md-up">
+        <ion-text class="extra-link">
+          Link Three
+        </ion-text>
+      </ion-col>
+      <ion-col sizeSm="12" sizeXs="12" class="ion-hide-md-up">
+        <ion-text class="extra-link">
+          Link Four
+        </ion-text>
+      </ion-col>
+      <ion-col sizeSm="12" sizeXs="12" class="ion-hide-md-up">
+        <ion-text class="extra-link">
+          Link Five
+        </ion-text>
+      </ion-col>
+      <ion-col sizeSm="12" sizeXs="12" class="ion-hide-md-up ion-padding-top ion-margin-top">
+        <ion-text class="extra-link">
+          Subscribe
+        </ion-text>
+      </ion-col>
+      <ion-col sizeSm="12" sizeXs="12" class="ion-hide-md-up">
+        <ion-item fill="outline" color="dark">
+          <ion-input placeholder="Enter your email"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col sizeSm="12" sizeXs="12" class="ion-hide-md-up">
+        <ion-button fill="outline" expand="block" class="no-ripple subscribe-btn" color="dark">Subscribe</ion-button>
+      </ion-col>
+      <ion-col sizeSm="12" sizeXs="12" class="ion-hide-md-up">
+        <ion-text class="agreement-text ion-margin-vertical">By subscribing you agree to with our <a
+            [routerLink]="['/']">Privacy Policy</a></ion-text>
+      </ion-col>
+    </ion-row>
+    <hr color="secondary" class="line" />
+    <ion-row class="ion-align-items-center ion-text-wrap">
+      <ion-col sizeXl="2" sizeLg="2" sizeMd="2" sizeSm="12" sizeXs="12" size="12">
+        <a class="links" [routerLink]="'/'">
+          Privacy Policy
+        </a>
+      </ion-col>
+      <ion-col sizeXl="2" sizeLg="2" sizeMd="2" sizeSm="12" sizeXs="12" size="12">
+        <a class="links" [routerLink]="'/'">
+          Terms of Service
+        </a>
+      </ion-col>
+      <ion-col sizeXl="2" sizeLg="2" sizeMd="2" sizeSm="12" sizeXs="12" size="12">
+        <a class="links" [routerLink]="'/'">
+          Cookies Settings
+        </a>
+      </ion-col>
+      <ion-col sizeXl="6" sizeLg="6" sizeMd="6" sizeSm="12" sizeXs="12" size="12"
+        class="ion-text-wrap ion-padding-sm-vertical ion-text-xl-end ion-text-lg-end ion-text-md-end">
+        <ion-text class="links">
+          <span>
+            &copy; 2023 Relume. All rights reserved.
+          </span>
+        </ion-text>
       </ion-col>
     </ion-row>
   </ion-grid>
-  Privacy Policy
-  Terms of Service
-  Cookies Settings
-  © 2023 Relume. All rights reserved.
 </ion-content>
