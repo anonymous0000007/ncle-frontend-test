@@ -1,10 +1,85 @@
 <ion-card>
   <ion-card-header>
-    <ion-card-title>Card Title</ion-card-title>
-    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+    <ion-card-title>Subscription</ion-card-title>
+    <ion-card-subtitle>to our Monthly Surprise Box</ion-card-subtitle>
   </ion-card-header>
 
   <ion-card-content>
-    Here's a small text description for the card content. Nothing more, nothing less.
+    Contact Information
+    Your Name
+    <ion-input placeholder="e.g Osama Alshathri"></ion-input>
+    Email
+    <ion-input placeholder="Osama@gmail.com"></ion-input>
+    Child’s Information
+    Child’s Full Name
+    <ion-input placeholder="e.g Sarah Mohammad"></ion-input>
+    Child’s Date of Birth
+    <ion-list>
+      <ion-item>
+        <ion-select aria-label="Fruit" placeholder="Date">
+          <ion-select-option value="apples">25</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item>
+        <ion-select aria-label="Fruit" placeholder="Month">
+          <ion-select-option value="apples">January</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item>
+        <ion-select aria-label="Fruit" placeholder="Year">
+          <ion-select-option value="apples">1998</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    Grade
+    <ion-list>
+      <ion-item>
+        <ion-select aria-label="Fruit" placeholder="Year">
+          <ion-select-option value="apples">1998</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    Gender
+    <ion-radio-group value="strawberries">
+      <ion-radio value="grapes">Boy</ion-radio><br />
+      <ion-radio value="strawberries">Girl</ion-radio><br />
+    </ion-radio-group>
+    As a parent select any 3 topics
+    <ion-chip [outline]="true">Arabic</ion-chip>
+
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12" class="ion-text-center">
+        <ion-button class="btn-secondary" expand="block">Continue to payment</ion-button>
+      </ion-col>
+    </ion-row>
   </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Summary</ion-card-title>
+    <ion-card-subtitle>of your Monthly Surprise Box</ion-card-subtitle>
+  </ion-card-header>
+
+
+  <div>
+    Mystery Box
+    X 1
+    SAR 456
+    Monthly
+  </div>
+  <div>
+    Subtotal SAR 456
+  </div>
+  <div>
+    Shipping Free
+  </div>
+  <div>Taxes SAR 4.0</div>
+  <div>Total SAR 456
+    Monthly
+  </div>
 </ion-card>

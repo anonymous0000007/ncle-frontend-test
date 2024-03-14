@@ -49,18 +49,18 @@
         </ion-text>
       </ion-col>
     </ion-row>
-    <ion-row class="ion-justify-content-center">
-      <ion-col size="12" class="ion-text-center">
-        <ion-button [routerLink]="['/subscription']" class="btn-secondary">Subscribe Now</ion-button>
-      </ion-col>
-    </ion-row>
-
     <ion-row>
       <ion-col class="ion-text-center">
-        <ion-img src="assets/subscribe.svg" alt="Subscribe first"></ion-img>
-        <ion-text class="header-dark header-dark-bolder-3">Step 1:</ion-text>
-        <ion-text class="header-dark header-dark-bolder-2">Subscribe</ion-text>
-        <ion-text class="header-dark header-dark-light-2">Select a subscription plan that suits your child's learning needs and preferences.</ion-text>
+        <ion-grid>
+          <ion-img src="assets/subscribe.svg" alt="Subscribe first"></ion-img>
+        </ion-grid>
+        <ion-grid class="ion-text-wrap">
+          <ion-text class="header-dark header-dark-bolder-3">Step 1:</ion-text>
+          <ion-text class="header-dark header-dark-bolder-2">Subscribe</ion-text>
+        </ion-grid>
+        <ion-grid>
+          <ion-text class="header-dark header-dark-light-2">Select a subscription plan that suits your child's learning needs and preferences.</ion-text>
+        </ion-grid>
       </ion-col>
       <ion-col>
         <ion-img src="assets/customize.svg" alt="Subscribe first"></ion-img>
@@ -75,34 +75,33 @@
         <ion-text class="header-dark header-dark-light-2">Sit back and relax as your child eagerly awaits the arrival of their monthly surprise box filled with engaging learning materials.</ion-text>
       </ion-col>
     </ion-row>
-  </ion-grid>
-  <!-- <ion-grid>
-    <ion-row>
-      <ion-col color="dark">How It Works: Subscribe and Receive Your Surprise Box</ion-col>
-      <ion-col>Subscribe to our surprise subscription box and give your child the gift of learning. Each month, we
-        curate a box filled with educational materials tailored to your child's age and interests.</ion-col>
-    </ion-row>
-    <ion-row color="dark">
-      <ion-col>
-        Step 1: Subscribe
-        Select a subscription plan that suits your child's learning needs and preferences.
-      </ion-col>
-      <ion-col>
-        Step 2: Personalise Your Box
-        Tell us about your child's age, interests, and learning goals, and we'll customize their surprise box
-        accordingly.
-      </ion-col>
-      <ion-col>
-        Step 3: Receive Your Surprise Box
-        Sit back and relax as your child eagerly awaits the arrival of their monthly surprise box filled with engaging
-        learning materials.
-      </ion-col>
-    </ion-row>
     <ion-row class="ion-justify-content-center">
-      <ion-col offset="3" size="6">
-        <ion-button [routerLink]="['/subscription']" class="no-ripple" color="secondary">Subscribe Now</ion-button>
+      <ion-col size="12" class="ion-text-center">
+        <ion-button [routerLink]="['/subscription']" class="btn-secondary">Subscribe Now</ion-button>
       </ion-col>
     </ion-row>
-  </ion-grid> -->
+  </ion-grid>
 
+  Link One
+  Link Two
+  Link Three
+  Link Four
+  Link Five
+  Subscribe
+  <ion-item fill="outline">
+    <ion-input placeholder="Enter your email"></ion-input>
+  </ion-item>
+  <ion-button fill="outline" color="secondary">Subscribe</ion-button>
+  By subscribing you agree to with our Privacy Policy
+  <ion-grid color="secondary">
+    <ion-row color="secondary" class="ion-justify-content-center">
+      <ion-col size="12">
+        <hr color="secondary"/>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  Privacy Policy
+  Terms of Service
+  Cookies Settings
+  © 2023 Relume. All rights reserved.
 </ion-content>
