@@ -1,8 +1,8 @@
 {
   "name": "ncle-frontend-test",
-  "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "version": "1.0.0",
+  "author": "Rushil Shah<shahrushil09@gmail.com>",
+  "homepage": "http://localhost:8100",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -60,5 +60,5 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.2.2"
   },
-  "description": "An Ionic project"
+  "description": "The Myedu is an online platform designed to provide engaging and interactive educational content for children. With a focus on early childhood education, the platform aims to foster a love for learning and support children's cognitive, social, and emotional development."
 }
