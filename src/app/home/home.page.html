@@ -1,20 +1,108 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content color="primary" [fullscreen]="false">
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col sizeXl="8" sizeLg="9" sizeMd="9" sizeSm="10" sizeXs="11" size="12" class="ion-text-center">
+        <ion-text class="header-secondary-1">
+          Discover the magic of our surprise box
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col sizeXl="7" sizeLg="8" sizeMd="9" sizeSm="10" sizeXs="11" size="12" class="ion-text-center ion-text-wrap">
+        <ion-text class="header-secondary-2">
+          Unleash your child's curiosity with our educational subscription box filled with fun and learning.
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12" class="ion-text-center">
+        <ion-button [routerLink]="['/subscription']" class="btn-secondary">Subscribe Now</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="11" class="ion-text-center">
+        <ion-img src="assets/placeholder.webp" alt="Surprise boxes"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-grid class="surprise-container">
+    <ion-row class="ion-justify-content-center">
+      <ion-col sizeXl="7" sizeLg="8" sizeMd="9" sizeSm="10" sizeXs="11" size="12" class="ion-text-center">
+        <ion-text class="ion-text-wrap header-dark header-dark-bold-1">
+          Discover
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col sizeXl="7" sizeLg="8" sizeMd="9" sizeSm="10" sizeXs="11" size="12" class="ion-text-center ion-text-wrap">
+        <ion-text class="header-dark-1 header-dark header-dark-bolder-1">
+          How It Works: Subscribe and Receive Your Surprise Box
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col sizeXl="7" sizeLg="8" sizeMd="9" sizeSm="10" sizeXs="11" size="12" class="ion-text-center ion-text-wrap">
+        <ion-text class="header-dark-2 header-dark header-dark-light-1">
+          Subscribe to our surprise subscription box and give your child the gift of learning. Each month, we curate a
+          box filled with educational materials tailored to your child's age and interests.
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12" class="ion-text-center">
+        <ion-button [routerLink]="['/subscription']" class="btn-secondary">Subscribe Now</ion-button>
+      </ion-col>
+    </ion-row>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <ion-img src="assets/subscribe.svg" alt="Subscribe first"></ion-img>
+        <ion-text class="header-dark header-dark-bolder-3">Step 1:</ion-text>
+        <ion-text class="header-dark header-dark-bolder-2">Subscribe</ion-text>
+        <ion-text class="header-dark header-dark-light-2">Select a subscription plan that suits your child's learning needs and preferences.</ion-text>
+      </ion-col>
+      <ion-col>
+        <ion-img src="assets/customize.svg" alt="Subscribe first"></ion-img>
+        <ion-text class="header-dark header-dark-bolder-3">Step 2:</ion-text>
+        <ion-text class="header-dark header-dark-bolder-2">Personalise Your Box</ion-text>
+        <ion-text class="header-dark header-dark-light-2">Tell us about your child's age, interests, and learning goals, and we'll customize their surprise box accordingly.</ion-text>
+      </ion-col>
+      <ion-col>
+        <ion-img src="assets/surprise.svg" alt="Subscribe first"></ion-img>
+        <ion-text class="header-dark header-dark-bolder-3">Step 3:</ion-text>
+        <ion-text class="header-dark header-dark-bolder-2">Receive Your Surprise Box</ion-text>
+        <ion-text class="header-dark header-dark-light-2">Sit back and relax as your child eagerly awaits the arrival of their monthly surprise box filled with engaging learning materials.</ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!-- <ion-grid>
+    <ion-row>
+      <ion-col color="dark">How It Works: Subscribe and Receive Your Surprise Box</ion-col>
+      <ion-col>Subscribe to our surprise subscription box and give your child the gift of learning. Each month, we
+        curate a box filled with educational materials tailored to your child's age and interests.</ion-col>
+    </ion-row>
+    <ion-row color="dark">
+      <ion-col>
+        Step 1: Subscribe
+        Select a subscription plan that suits your child's learning needs and preferences.
+      </ion-col>
+      <ion-col>
+        Step 2: Personalise Your Box
+        Tell us about your child's age, interests, and learning goals, and we'll customize their surprise box
+        accordingly.
+      </ion-col>
+      <ion-col>
+        Step 3: Receive Your Surprise Box
+        Sit back and relax as your child eagerly awaits the arrival of their monthly surprise box filled with engaging
+        learning materials.
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col offset="3" size="6">
+        <ion-button [routerLink]="['/subscription']" class="no-ripple" color="secondary">Subscribe Now</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid> -->
+
 </ion-content>
