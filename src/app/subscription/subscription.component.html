@@ -1,6 +1,6 @@
-<ion-content [fullscreen]="true">
+<ion-content color="secondary" [fullscreen]="true">
   <ion-row class="ion-justify-content-center main-container">
-    <ion-col size="5" class="subscribe-card">
+    <ion-col sizeXl="7" sizeLg="6" sizeMd="5" sizeSm="11" sizeXs="11" size="11" class="subscribe-card ion-padding">
       <ion-row>
         <ion-col size="12">
           <ion-text class="title">Subscription</ion-text>
@@ -104,31 +104,56 @@
         </ion-col>
       </ion-row>
     </ion-col>
-    <ion-col size="5" class="summary-card">
-      <ion-row>
+    <ion-col sizeXl="3" sizeLg="4" sizeMd="5" sizeSm="11" sizeXs="11" size="11" class="summary-card ion-padding">
+      <ion-row class="ion-padding-horizontal ion-margin-vertical">
         <ion-col size="12">
           <ion-text class="title">Summary</ion-text>
         </ion-col>
         <ion-col size="12">
           <ion-text class="sub-title">of your Monthly Surprise Box</ion-text>
         </ion-col>
+        <ion-col size="12" class="ion-margin-vertical">
+          <ion-card class="custom-card ion-padding-bottom">
+            <ion-card-content>
+              <ion-row>
+                <ion-col>
+                  <ion-text class="sub-title">Mystery Box</ion-text><br>X 1
+                </ion-col>
+                <ion-col class="ion-text-right">
+                  <ion-text class="sub-title">SAR <ion-text class="font-weight-700">456</ion-text></ion-text><br>Monthly
+                </ion-col>
+              </ion-row>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6">
+          <ion-text class="sub-title-2">Subtotal</ion-text>
+        </ion-col>
+        <ion-col size="6" class="ion-text-right">
+          <ion-text class="sub-title">SAR <ion-text class="font-weight-700">456</ion-text></ion-text>
+        </ion-col>
+        <ion-col size="6">
+          <ion-text class="sub-title-2">Shipping</ion-text>
+        </ion-col>
+        <ion-col size="6" class="ion-text-right">
+          <ion-text class="sub-title-2" style="color: #707070">Free</ion-text>
+        </ion-col>
+        <ion-col size="6">
+          <ion-text class="sub-title-2">Taxes</ion-text>
+        </ion-col>
+        <ion-col size="6" class="ion-text-right">
+          <ion-text class="sub-title">SAR <ion-text class="font-weight-700">4.0</ion-text></ion-text>
+        </ion-col>
+        <ion-col size="12">
+          <hr color="secondary" class="ion-margin-vertical line" />
+        </ion-col>
+        <ion-col size="6">
+          <ion-text class="title-3">Total</ion-text>
+        </ion-col>
+        <ion-col size="6" class="ion-text-right">
+          <ion-text class="title-2"><ion-text>SAR</ion-text> 460</ion-text>
+        </ion-col>
       </ion-row>
-      <div>
-        Mystery Box
-        X 1
-        SAR 456
-        Monthly
-      </div>
-      <div>
-        Subtotal SAR 456
-      </div>
-      <div>
-        Shipping Free
-      </div>
-      <div>Taxes SAR 4.0</div>
-      <div>Total SAR 456
-        Monthly
-      </div>
     </ion-col>
   </ion-row>
 </ion-content>
