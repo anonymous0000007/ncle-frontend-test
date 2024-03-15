@@ -21,12 +21,12 @@
     </ion-row>
     <ion-row class="ion-padding-vertical ion-justify-content-center">
       <ion-col size="11" class="ion-text-center">
-        <ion-img src="assets/placeholder.webp" alt="Surprise boxes"></ion-img>
+        <ion-img src="{{placeholderURL}}" alt="Surprise boxes"></ion-img>
       </ion-col>
     </ion-row>
   </ion-grid>
 
-  <ion-grid class="surprise-container">
+  <ion-grid class="surprise-container" [ngStyle]="{'background-image': 'url(\'' + surprisebackURL + '\')' }">
     <ion-row class="ion-justify-content-center margin-top">
       <ion-col sizeXl="7" sizeLg="8" sizeMd="9" sizeSm="10" sizeXs="11" size="12" class="ion-text-center">
         <ion-text class="ion-text-wrap header-dark header-dark-bold-1">
