@@ -51,17 +51,28 @@
 
   .email-box {
     width: 100%;
-
-    ion-input {
-      --ion-item-background: transparent;
-      --ion-item-border-width: 1px;
-      --ion-item-border-color: #000;
-      --ion-item-border-radius: 0;
-    }
+    font-size: 1rem;
+    line-height: 1.5rem;
+    --background: #fff;
+    --color: #000;
+    --border-width: 1px;
+    --border-radius: 0px;
+    --border-color: #000;
   }
 
   .subscribe-btn {
     text-transform: capitalize;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    --background: #fff;
+    --color: #000;
+    --border-radius: 0px;
+    --border-color: #000;
+    --border-width: 1px;
+    --padding-top: 12px;
+    --padding-right: 24px;
+    --padding-bottom: 12px;
+    --padding-left: 24px;
   }
 
   .agreement-text {

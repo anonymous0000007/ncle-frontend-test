@@ -18,8 +18,8 @@ export class HomePage implements OnInit {
   constructor(public platform: Platform) { }
 
   ngOnInit(): void {
+    /* detecting browser webp images support */
     const canvas: HTMLCanvasElement = document.createElement('canvas');
-
     if (
       !!(canvas.getContext && canvas.getContext('2d')) &&
       canvas.toDataURL('image/webp').indexOf('data:image/webp') === 0
