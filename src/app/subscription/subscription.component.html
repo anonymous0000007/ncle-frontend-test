@@ -1,85 +1,134 @@
-<ion-card>
-  <ion-card-header>
-    <ion-card-title>Subscription</ion-card-title>
-    <ion-card-subtitle>to our Monthly Surprise Box</ion-card-subtitle>
-  </ion-card-header>
-
-  <ion-card-content>
-    Contact Information
-    Your Name
-    <ion-input placeholder="e.g Osama Alshathri"></ion-input>
-    Email
-    <ion-input placeholder="Osama@gmail.com"></ion-input>
-    Child’s Information
-    Child’s Full Name
-    <ion-input placeholder="e.g Sarah Mohammad"></ion-input>
-    Child’s Date of Birth
-    <ion-list>
-      <ion-item>
-        <ion-select aria-label="Fruit" placeholder="Date">
-          <ion-select-option value="apples">25</ion-select-option>
-        </ion-select>
-      </ion-item>
-    </ion-list>
-    <ion-list>
-      <ion-item>
-        <ion-select aria-label="Fruit" placeholder="Month">
-          <ion-select-option value="apples">January</ion-select-option>
-        </ion-select>
-      </ion-item>
-    </ion-list>
-    <ion-list>
-      <ion-item>
-        <ion-select aria-label="Fruit" placeholder="Year">
-          <ion-select-option value="apples">1998</ion-select-option>
-        </ion-select>
-      </ion-item>
-    </ion-list>
-    Grade
-    <ion-list>
-      <ion-item>
-        <ion-select aria-label="Fruit" placeholder="Year">
-          <ion-select-option value="apples">1998</ion-select-option>
-        </ion-select>
-      </ion-item>
-    </ion-list>
-    Gender
-    <ion-radio-group value="strawberries">
-      <ion-radio value="grapes">Boy</ion-radio><br />
-      <ion-radio value="strawberries">Girl</ion-radio><br />
-    </ion-radio-group>
-    As a parent select any 3 topics
-    <ion-chip [outline]="true">Arabic</ion-chip>
-
-    <ion-row class="ion-justify-content-center">
-      <ion-col size="12" class="ion-text-center">
-        <ion-button class="btn-secondary" expand="block">Continue to payment</ion-button>
-      </ion-col>
-    </ion-row>
-  </ion-card-content>
-</ion-card>
-
-<ion-card>
-  <ion-card-header>
-    <ion-card-title>Summary</ion-card-title>
-    <ion-card-subtitle>of your Monthly Surprise Box</ion-card-subtitle>
-  </ion-card-header>
-
-
-  <div>
-    Mystery Box
-    X 1
-    SAR 456
-    Monthly
-  </div>
-  <div>
-    Subtotal SAR 456
-  </div>
-  <div>
-    Shipping Free
-  </div>
-  <div>Taxes SAR 4.0</div>
-  <div>Total SAR 456
-    Monthly
-  </div>
-</ion-card>
+<ion-content [fullscreen]="true">
+  <ion-row class="ion-justify-content-center main-container">
+    <ion-col size="5" class="subscribe-card">
+      <ion-row>
+        <ion-col size="12">
+          <ion-text class="title">Subscription</ion-text>
+        </ion-col>
+        <ion-col size="12">
+          <ion-text class="sub-title">to our Monthly Surprise Box</ion-text>
+        </ion-col>
+        <hr>
+        <ion-col size="12">
+          <ion-text class="title-2">Contact Information</ion-text>
+        </ion-col>
+        <ion-col size="12">
+          <ion-text class="sub-title-2">Your Name</ion-text>
+        </ion-col>
+        <ion-col size="12">
+          <ion-item fill="outline">
+            <ion-input fill="outline" placeholder="e.g Osama Alshathri"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12">
+          <ion-text class="sub-title-2">Email</ion-text>
+        </ion-col>
+        <ion-col size="12">
+          <ion-item fill="outline">
+            <ion-input fill="outline" placeholder="Osama@gmail.com"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12">
+          <ion-text class="title-2">Child’s Information</ion-text>
+        </ion-col>
+        <ion-col size="12">
+          <ion-text class="sub-title-2">Child’s Full Name</ion-text>
+        </ion-col>
+        <ion-col size="12">
+          <ion-item fill="outline">
+            <ion-input fill="outline" placeholder="e.g Sarah Mohammad"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12">
+          <ion-text class="sub-title-2">Child’s Date of Birth</ion-text>
+        </ion-col>
+        <ion-col>
+          <ion-row>
+            <ion-col size="4">
+              <ion-list>
+                <ion-item>
+                  <ion-select aria-label="Fruit" placeholder="Date">
+                    <ion-select-option value="apples">25</ion-select-option>
+                  </ion-select>
+                </ion-item>
+              </ion-list>
+            </ion-col>
+            <ion-col size="4">
+              <ion-list>
+                <ion-item>
+                  <ion-select aria-label="Fruit" placeholder="Month">
+                    <ion-select-option value="apples">January</ion-select-option>
+                  </ion-select>
+                </ion-item>
+              </ion-list>
+            </ion-col>
+            <ion-col size="4">
+              <ion-list>
+                <ion-item>
+                  <ion-select aria-label="Fruit" placeholder="Year">
+                    <ion-select-option value="apples">1998</ion-select-option>
+                  </ion-select>
+                </ion-item>
+              </ion-list>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col size="12">
+          <ion-text class="sub-title-2">Grade</ion-text>
+        </ion-col>
+        <ion-col size="12">
+          <ion-list>
+            <ion-item>
+              <ion-select aria-label="Fruit" placeholder="e.g. Grade 2">
+                <ion-select-option value="apples">1998</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+        <ion-col size="12">
+          <ion-text class="sub-title-2">Gender</ion-text>
+        </ion-col>
+        <ion-col size="12">
+          <ion-text class="title-2">As a parent select any 3 topics</ion-text>
+        </ion-col>
+        <ion-col size="12">
+          <ion-chip [outline]="true">Arabic</ion-chip>
+          <ion-chip [outline]="true">Islamic</ion-chip>
+          <ion-chip [outline]="true">English</ion-chip>
+          <ion-chip [outline]="true">History</ion-chip>
+          <ion-chip [outline]="true">Sports</ion-chip>
+        </ion-col>
+        <ion-col>
+          <ion-button class="btn-secondary" expand="block"
+            style="padding: 8px 27.09px 8px 26px; border-radius: 16px;font-size: 23px">Continue to payment</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col size="5" class="summary-card">
+      <ion-row>
+        <ion-col size="12">
+          <ion-text class="title">Summary</ion-text>
+        </ion-col>
+        <ion-col size="12">
+          <ion-text class="sub-title">of your Monthly Surprise Box</ion-text>
+        </ion-col>
+      </ion-row>
+      <div>
+        Mystery Box
+        X 1
+        SAR 456
+        Monthly
+      </div>
+      <div>
+        Subtotal SAR 456
+      </div>
+      <div>
+        Shipping Free
+      </div>
+      <div>Taxes SAR 4.0</div>
+      <div>Total SAR 456
+        Monthly
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-content>
