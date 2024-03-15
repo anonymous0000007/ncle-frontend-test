@@ -1,111 +1,117 @@
 <ion-content color="secondary" [fullscreen]="true">
   <ion-row class="ion-justify-content-center main-container">
-    <ion-col sizeXl="7" sizeLg="6" sizeMd="5" sizeSm="11" sizeXs="11" size="11" class="subscribe-card ion-padding">
-      <ion-row>
+    <ion-col sizeXl="7" sizeLg="6" sizeMd="6" sizeSm="11" sizeXs="11" size="11" class="subscribe-card"
+      [ngClass]="{'ion-padding': platform.width() >= 768}">
+      <ion-row class="ion-margin-vertical" [ngClass]="{'ion-padding-horizontal': platform.width() >= 768}">
         <ion-col size="12">
           <ion-text class="title">Subscription</ion-text>
         </ion-col>
-        <ion-col size="12">
+        <ion-col size="12" class="ion-margin-bottom">
           <ion-text class="sub-title">to our Monthly Surprise Box</ion-text>
         </ion-col>
-        <hr>
-        <ion-col size="12">
-          <ion-text class="title-2">Contact Information</ion-text>
-        </ion-col>
-        <ion-col size="12">
-          <ion-text class="sub-title-2">Your Name</ion-text>
-        </ion-col>
-        <ion-col size="12">
-          <ion-item fill="outline">
-            <ion-input fill="outline" placeholder="e.g Osama Alshathri"></ion-input>
-          </ion-item>
-        </ion-col>
-        <ion-col size="12">
-          <ion-text class="sub-title-2">Email</ion-text>
-        </ion-col>
-        <ion-col size="12">
-          <ion-item fill="outline">
-            <ion-input fill="outline" placeholder="Osama@gmail.com"></ion-input>
-          </ion-item>
-        </ion-col>
-        <ion-col size="12">
-          <ion-text class="title-2">Child’s Information</ion-text>
-        </ion-col>
-        <ion-col size="12">
-          <ion-text class="sub-title-2">Child’s Full Name</ion-text>
-        </ion-col>
-        <ion-col size="12">
-          <ion-item fill="outline">
-            <ion-input fill="outline" placeholder="e.g Sarah Mohammad"></ion-input>
-          </ion-item>
-        </ion-col>
-        <ion-col size="12">
-          <ion-text class="sub-title-2">Child’s Date of Birth</ion-text>
-        </ion-col>
         <ion-col>
-          <ion-row>
-            <ion-col size="4">
-              <ion-list>
-                <ion-item>
-                  <ion-select aria-label="Fruit" placeholder="Date">
-                    <ion-select-option value="apples">25</ion-select-option>
-                  </ion-select>
-                </ion-item>
-              </ion-list>
-            </ion-col>
-            <ion-col size="4">
-              <ion-list>
-                <ion-item>
-                  <ion-select aria-label="Fruit" placeholder="Month">
-                    <ion-select-option value="apples">January</ion-select-option>
-                  </ion-select>
-                </ion-item>
-              </ion-list>
-            </ion-col>
-            <ion-col size="4">
-              <ion-list>
-                <ion-item>
-                  <ion-select aria-label="Fruit" placeholder="Year">
-                    <ion-select-option value="apples">1998</ion-select-option>
-                  </ion-select>
-                </ion-item>
-              </ion-list>
-            </ion-col>
+          <ion-row class="ion-align-items-center">
+            <ion-text class="path pointer" style="color: #1773B0">Cart</ion-text>
+            <ion-icon class="path-ico" name="chevron-forward-outline"></ion-icon>
+            <ion-text class="path pointer" style="color: #333333">Information</ion-text>
+            <ion-icon class="path-ico" name="chevron-forward-outline"></ion-icon>
+            <ion-text class="path pointer">Shipping</ion-text>
+            <ion-icon class="path-ico" name="chevron-forward-outline"></ion-icon>
+            <ion-text class="path pointer">Payment</ion-text>
           </ion-row>
         </ion-col>
         <ion-col size="12">
-          <ion-text class="sub-title-2">Grade</ion-text>
+          <hr class="ion-margin-vertical line" />
         </ion-col>
-        <ion-col size="12">
-          <ion-list>
-            <ion-item>
-              <ion-select aria-label="Fruit" placeholder="e.g. Grade 2">
-                <ion-select-option value="apples">1998</ion-select-option>
-              </ion-select>
-            </ion-item>
-          </ion-list>
-        </ion-col>
-        <ion-col size="12">
-          <ion-text class="sub-title-2">Gender</ion-text>
-        </ion-col>
-        <ion-col size="12">
-          <ion-text class="title-2">As a parent select any 3 topics</ion-text>
-        </ion-col>
-        <ion-col size="12">
-          <ion-chip [outline]="true">Arabic</ion-chip>
-          <ion-chip [outline]="true">Islamic</ion-chip>
-          <ion-chip [outline]="true">English</ion-chip>
-          <ion-chip [outline]="true">History</ion-chip>
-          <ion-chip [outline]="true">Sports</ion-chip>
-        </ion-col>
-        <ion-col>
-          <ion-button class="btn-secondary" expand="block"
-            style="padding: 8px 27.09px 8px 26px; border-radius: 16px;font-size: 23px">Continue to payment</ion-button>
+        <ion-row class="ion-margin-bottom">
+          <ion-col size="12">
+            <ion-text class="title-2">Contact Information</ion-text>
+          </ion-col>
+          <ion-col size="12">
+            <ion-text class="sub-title-2">Your Name</ion-text>
+          </ion-col>
+          <ion-col size="12" class="ion-margin-bottom">
+            <ion-input fill="outline" placeholder="e.g Osama Alshathri" class="custom-input"></ion-input>
+          </ion-col>
+          <ion-col size="12">
+            <ion-text class="sub-title-2">Email</ion-text>
+          </ion-col>
+          <ion-col size="12" class="ion-margin-bottom">
+            <ion-input fill="outline" placeholder="Osama@gmail.com" class="custom-input"></ion-input>
+          </ion-col>
+        </ion-row>
+        <ion-row class="ion-margin-bottom">
+          <ion-col size="12">
+            <ion-text class="title-2">Child’s Information</ion-text>
+          </ion-col>
+          <ion-col size="12">
+            <ion-text class="sub-title-2">Child’s Full Name</ion-text>
+          </ion-col>
+          <ion-col size="12" class="ion-margin-bottom">
+            <ion-input fill="outline" placeholder="e.g Sarah Mohammad" class="custom-input"></ion-input>
+          </ion-col>
+          <ion-col size="12">
+            <ion-text class="sub-title-2">Child’s Date of Birth</ion-text>
+          </ion-col>
+          <ion-col size="12" class="ion-margin-bottom">
+            <ion-row>
+              <ion-col size="4">
+                <ion-select fill="outline" interface="{{platform.width() < 768 ? 'alert' : 'popover'}}"
+                  toggleIcon="chevron-down-outline" expandedIcon="chevron-up-outline" aria-label="Date"
+                  placeholder="Date" class="custom-select">
+                  <ion-select-option *ngFor="let number of generateNumbersArray(31)"
+                    value="{{number}}">{{number}}</ion-select-option>
+                </ion-select>
+              </ion-col>
+              <ion-col size="4">
+                <ion-select fill="outline" interface="{{platform.width() < 768 ? 'alert' : 'popover'}}"
+                  toggleIcon="chevron-down-outline" expandedIcon="chevron-up-outline" aria-label="Month"
+                  placeholder="Month" class="custom-select">
+                  <ion-select-option *ngFor="let month of months" value="{{month}}">{{month |
+                    titlecase}}</ion-select-option>
+                </ion-select>
+              </ion-col>
+              <ion-col size="4">
+                <ion-select fill="outline" interface="{{platform.width() < 768 ? 'alert' : 'popover'}}"
+                  toggleIcon="chevron-down-outline" expandedIcon="chevron-up-outline" aria-label="Year"
+                  placeholder="Year" class="custom-select">
+                  <ion-select-option *ngFor="let number of generateNumbersArray(18)" value="{{2006 + number}}">{{2006 +
+                    number}}</ion-select-option>
+                </ion-select>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+          <ion-col size="12">
+            <ion-text class="sub-title-2">Grade</ion-text>
+          </ion-col>
+          <ion-col size="12" class="ion-margin-bottom">
+            <ion-select fill="outline" interface="{{platform.width() < 768 ? 'alert' : 'popover'}}"
+              toggleIcon="chevron-down-outline" expandedIcon="chevron-up-outline" aria-label="e.g. Grade 2"
+              placeholder="e.g. Grade 2" class="custom-select">
+              <ion-select-option *ngFor="let number of generateNumbersArray(12)"
+                value="{{number}}">{{number}}</ion-select-option>
+            </ion-select>
+          </ion-col>
+          <ion-col size="12">
+            <ion-text class="sub-title-2">Gender</ion-text>
+          </ion-col>
+          <ion-col size="12" class="ion-margin-bottom">
+          </ion-col>
+          <ion-col size="12">
+            <ion-text class="title-2">As a parent select any 3 topics</ion-text>
+          </ion-col>
+          <ion-col size="12" class="ion-margin-bottom">
+            <ion-chip *ngFor="let category of categories" color="primary" [outline]="true">{{category}}</ion-chip>
+          </ion-col>
+        </ion-row>
+        <ion-col size="12" class="ion-hide-md-down">
+          <ion-button fill="outline" class="btn-secondary" expand="block">Continue to payment</ion-button>
         </ion-col>
       </ion-row>
     </ion-col>
-    <ion-col sizeXl="3" sizeLg="4" sizeMd="5" sizeSm="11" sizeXs="11" size="11" class="summary-card ion-padding">
-      <ion-row class="ion-padding-horizontal ion-margin-vertical">
+    <ion-col sizeXl="3" sizeLg="4" sizeMd="5" sizeSm="11" sizeXs="11" size="11" class="summary-card"
+      [ngClass]="{'ion-padding': platform.width() >= 768}">
+      <ion-row class="ion-margin-vertical" [ngClass]="{'ion-padding-horizontal': platform.width() >= 768}">
         <ion-col size="12">
           <ion-text class="title">Summary</ion-text>
         </ion-col>
@@ -145,13 +151,16 @@
           <ion-text class="sub-title">SAR <ion-text class="font-weight-700">4.0</ion-text></ion-text>
         </ion-col>
         <ion-col size="12">
-          <hr color="secondary" class="ion-margin-vertical line" />
+          <hr class="ion-margin-vertical line" />
         </ion-col>
         <ion-col size="6">
           <ion-text class="title-3">Total</ion-text>
         </ion-col>
         <ion-col size="6" class="ion-text-right">
-          <ion-text class="title-2"><ion-text>SAR</ion-text> 460</ion-text>
+          <ion-text class="title-2"><ion-text class="font-weight-400">SAR</ion-text> 460</ion-text>
+        </ion-col>
+        <ion-col size="12" class="ion-hide-md-up ion-margin-top ion-padding-top">
+          <ion-button fill="outline" class="btn-secondary" expand="block">Continue to payment</ion-button>
         </ion-col>
       </ion-row>
     </ion-col>

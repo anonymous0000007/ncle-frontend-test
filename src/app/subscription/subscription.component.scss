@@ -8,6 +8,19 @@
   border-right-width: 0;
   border-top-left-radius: 24px;
   border-bottom-left-radius: 24px;
+  padding-top: 16px;
+
+  .path {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+    color: #707070;
+  }
+
+  .path-ico {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
 
 .summary-card {
@@ -16,16 +29,13 @@
   border-top-right-radius: 24px;
   border-bottom-right-radius: 24px;
   background-color: #F1EDFE;
+  padding-top: 16px;
 
   .custom-card {
     margin: 0;
     box-shadow: none;
     border-radius: 8px;
     --background: #fff;
-  }
-
-  .line {
-    background-color: #D1C5FB;
   }
 }
 
@@ -34,7 +44,7 @@
   font-weight: 700;
   line-height: 2rem;
   letter-spacing: 0em;
-  color: #000;
+  color: #202124;
 }
 
 .sub-title {
@@ -42,7 +52,7 @@
   font-weight: 400;
   line-height: 1.5rem;
   letter-spacing: 0.10000000149011612px;
-  color: #000;
+  color: #202124;
 }
 
 .title-2 {
@@ -50,7 +60,7 @@
   font-weight: 700;
   line-height: 2rem;
   letter-spacing: 0em;
-  color: #000;
+  color: #202124;
 }
 
 .sub-title-2 {
@@ -58,7 +68,7 @@
   font-weight: 500;
   line-height: 1.25rem;
   letter-spacing: 0em;
-  color: #000;
+  color: #202124;
 }
 
 .title-3 {
@@ -68,11 +78,50 @@
   color: #333333;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 767px) {
+  .subscribe-card {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 24px;
+    border-right-width: 1px !important;
+    border-bottom-width: 0px !important;
+    padding: 12px;
+  }
+
   .summary-card {
     border-top-right-radius: 0;
     border-bottom-left-radius: 24px;
     border-left-width: 1px !important;
     border-top-width: 0px !important;
+    padding: 12px;
   }
+}
+
+.line {
+  background-color: #D1C5FB;
+}
+
+.custom-input,
+.custom-select {
+  width: 100%;
+  min-height: 0;
+  height: 2.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  gap: 8px;
+  box-shadow: 0px 1px 2px 0px #1018280D;
+  caret-color: #AB95F9;
+  --background: #fff;
+  --color: #000;
+  --border-width: 1px;
+  --border-radius: 8px;
+  --border-color: #D0D5DD;
+  --padding-top: 10px;
+  --padding-right: 14px;
+  --padding-bottom: 10px;
+  --padding-left: 14px;
+}
+
+.custom-select::part(icon) {
+  position: absolute;
+  right: 20px;
 }
