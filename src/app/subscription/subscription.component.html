@@ -96,12 +96,16 @@
             <ion-text class="sub-title-2">Gender</ion-text>
           </ion-col>
           <ion-col size="12" class="ion-margin-bottom">
+            <ion-radio-group value="gender" justify="space-between">
+              <ion-radio value="boy" class="custom-radio">Boy</ion-radio><br />
+              <ion-radio value="girl" class="custom-radio">Girl</ion-radio>
+            </ion-radio-group>
           </ion-col>
           <ion-col size="12">
             <ion-text class="title-2">As a parent select any 3 topics</ion-text>
           </ion-col>
           <ion-col size="12" class="ion-margin-bottom">
-            <ion-chip *ngFor="let category of categories" color="primary" [outline]="true">{{category}}</ion-chip>
+            <ion-chip *ngFor="let category of categories" color="tertiary" [outline]="true">{{category}}</ion-chip>
           </ion-col>
         </ion-row>
         <ion-col size="12" class="ion-hide-md-down">
