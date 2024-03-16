@@ -119,9 +119,48 @@
   --padding-right: 14px;
   --padding-bottom: 10px;
   --padding-left: 14px;
+  --placeholder-color: #667085;
 }
 
 .custom-select::part(icon) {
   position: absolute;
   right: 20px;
+  color: #000;
+}
+
+.custom-radio {
+  box-shadow: 0px 1px 2px 0px #1018280D;
+  --border-width: 1px;
+  --border-color: #D0D5DD;
+  --background: #fff;
+  --color: #202124;
+  --border-radius: 8px;
+
+  ion-radio::part(container) {
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    border: 2px solid #ddd;
+  }
+  
+  ion-radio::part(mark) {
+    background: none;
+    transition: none;
+    transform: none;
+    border-radius: 0;
+  }
+  
+  ion-radio.radio-checked::part(container) {
+    background: #6633FF;
+    border-color: transparent;
+  }
+  
+  ion-radio.radio-checked::part(mark) {
+    width: 6px;
+    height: 10px;
+    border-width: 0px 2px 2px 0px;
+    border-style: solid;
+    border-color: #fff;
+    transform: rotate(45deg);
+  }
 }

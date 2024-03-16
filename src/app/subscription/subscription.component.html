@@ -53,7 +53,7 @@
           <ion-col size="12">
             <ion-text class="sub-title-2">Child’s Date of Birth</ion-text>
           </ion-col>
-          <ion-col size="12" class="ion-margin-bottom">
+          <ion-col size="12" class="ion-margin-bottom ion-no-padding">
             <ion-row>
               <ion-col size="4">
                 <ion-select fill="outline" interface="{{platform.width() < 768 ? 'alert' : 'popover'}}"
@@ -95,20 +95,34 @@
           <ion-col size="12">
             <ion-text class="sub-title-2">Gender</ion-text>
           </ion-col>
-          <ion-col size="12" class="ion-margin-bottom">
-            <ion-radio-group value="gender" justify="space-between">
-              <ion-radio value="boy" class="custom-radio">Boy</ion-radio><br />
-              <ion-radio value="girl" class="custom-radio">Girl</ion-radio>
+          <ion-col size="12" class="ion-margin-bottom ion-no-padding">
+            <ion-radio-group value="primary" justify="space-between">
+              <ion-row>
+                <ion-col>
+                  <ion-item class="custom-radio">
+                    <ion-label>Boy</ion-label>
+                    <ion-radio slot="end" value="boy" aria-label="boy"></ion-radio>
+                  </ion-item>
+                </ion-col>
+                <ion-col>
+                  <ion-item class="custom-radio">
+                    <ion-label>Girl</ion-label>
+                    <ion-radio slot="end" value="girl" aria-label="girl"></ion-radio>
+                  </ion-item>
+                </ion-col>
+              </ion-row>
             </ion-radio-group>
           </ion-col>
           <ion-col size="12">
             <ion-text class="title-2">As a parent select any 3 topics</ion-text>
           </ion-col>
-          <ion-col size="12" class="ion-margin-bottom">
-            <ion-chip *ngFor="let category of categories" color="tertiary" [outline]="true">{{category}}</ion-chip>
+          <ion-col size="12" class="ion-margin-bottom ion-no-padding">
+            <ion-chip *ngFor="let category of categories;index as i"
+              color="{{(i < categories.length - 1) ? 'medium' : 'tertiary'}}" ng
+              [outline]="true">{{category}}</ion-chip>
           </ion-col>
         </ion-row>
-        <ion-col size="12" class="ion-hide-md-down">
+        <ion-col size="12" class="ion-hide-md-down ion-no-padding">
           <ion-button fill="outline" class="btn-secondary" expand="block">Continue to payment</ion-button>
         </ion-col>
       </ion-row>
